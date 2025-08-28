@@ -178,5 +178,20 @@ body {
 }
 
 .bottom-part{
-  background-color: lightgray;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  flex: 1;
+}
+
+.your-projects{
+  flex: 7;
+}
+
+.your-projects-grid{
+  display: grid;
+  background-color: brown;
+}
+
+.bottom-part-right{
+  flex: 3;
 }
