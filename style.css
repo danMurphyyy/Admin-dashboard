@@ -211,7 +211,7 @@ h3{
 .your-projects-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, minmax(140px, auto));
+  grid-template-rows: repeat(2, minmax(180px, auto));
   column-gap: 3%;
   row-gap: 3%;
   padding: 10px 3%;
@@ -258,4 +258,67 @@ h3{
   height: 100%;
   width: auto;
   object-fit: contain;
+}
+
+h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+h5{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.announcements-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(90px, 1fr));
+  grid-template-rows: repeat(2, minmax(80px, auto));
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.announcements-grid-item{
+  border-bottom: 1px solid #ccc;
+}
+
+.no-border{
+  border: none;
+}
+
+.announcements-header{
+  display: block;
+  font-weight: 700;
+}
+
+.trending-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(90px, 1fr));
+  grid-template-rows: repeat(2, minmax(80px, auto));
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.trending-grid-item{
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.trending-grid-item img{
+  height: 2.2em;
+  width: 2.2em;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.trending-header{
+  display: block;
+  font-weight: 700;
 }
