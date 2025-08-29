@@ -2,6 +2,11 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
+  font-family: Roboto;
+}
+
+h1{
+  color: white;
 }
 
 .left-boarder {
@@ -54,6 +59,11 @@ body {
 
 .lesser-dashboard-div span {
   font-weight: bold;
+  color: white;
+}
+
+.left-column img{
+  filter: brightness(0) invert(1);
 }
 
 .right-section {
@@ -65,8 +75,10 @@ body {
 
 .header {
   display: flex;
-  flex: 0 0 20%;
+  flex: 0 1 auto;
   min-height: 100px;
+  max-height: 800px;
+  overflow: hidden;
 }
 
 .left-side-header{
@@ -185,13 +197,32 @@ body {
 
 .your-projects{
   flex: 7;
+  height: 100%;
+  background-color: aqua;
+  min-height: 0;
+}
+
+h3{
+  margin-left: 3%;
 }
 
 .your-projects-grid{
   display: grid;
-  background-color: brown;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  column-gap: 3%;
+  row-gap: 3%;
+  padding: 10px 3%;
+  box-sizing: border-box;
+  min-height: 0;
 }
 
 .bottom-part-right{
   flex: 3;
+}
+
+.your-projects-grid-item{
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
 }
