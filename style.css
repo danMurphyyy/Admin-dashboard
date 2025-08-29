@@ -190,7 +190,7 @@ h1{
 }
 
 .bottom-part{
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(226, 249, 255);
   display: flex;
   flex: 1;
 }
@@ -198,7 +198,6 @@ h1{
 .your-projects{
   flex: 7;
   height: 100%;
-  background-color: aqua;
   min-height: 0;
 }
 
@@ -208,8 +207,8 @@ h3{
 
 .your-projects-grid{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(140px, auto));
   column-gap: 3%;
   row-gap: 3%;
   padding: 10px 3%;
@@ -222,7 +221,35 @@ h3{
 }
 
 .your-projects-grid-item{
-  display: flex;
   background-color: white;
   border-radius: 5px;
+  border-left: 5px solid gold;
+  padding: 15px;
+  min-height: 140px;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-name{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bottom-strip{
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.bottom-strip img{
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
