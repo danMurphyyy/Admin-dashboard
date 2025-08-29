@@ -211,13 +211,13 @@ h3{
 .your-projects-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, minmax(180px, auto));
+
   column-gap: 3%;
   row-gap: 3%;
   padding: 10px 3%;
   box-sizing: border-box;
   min-height: 0;
-  height: 80%;
+  height: auto;
   overflow-y: auto;
 }
 
